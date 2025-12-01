@@ -44,8 +44,13 @@ public class ConsoleHelper {
         int numberPerRow = 5;
         int indexOfNext = 0;
 
+        // Outer loop: continues while there are items left to display
         while (indexOfNext < totalNumber) {
+
+            // Inner loop: displays up to 5 items in a single row
             for (int i = 1; i <= numberPerRow; i++) {
+
+                // If we've reached the end of the list, print a newline and exit
                 if (indexOfNext >= totalNumber) {
                     System.out.println();
                     return;
